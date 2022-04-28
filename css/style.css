@@ -111,8 +111,11 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav.scrolled {
-  background: #000 url(../images/home3.jpg) repeat;
-  top: -82px;
+  background: rgb(169, 169, 172);
+  border-bottom: 1px solid white;
+  box-shadow: #0f0;
+  border-radius: 4px;
+  top: -75px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fh5co-nav.scrolled {
@@ -442,7 +445,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-section {
   padding: 7em 0;
-  background-color: #555555;
+  background: rgb(169, 169, 172);
 }
 @media screen and (max-width: 480px) {
   .fh5co-section {
@@ -480,8 +483,19 @@ h1, h2, h3, h4, h5, h6, figure {
     max-width: 100%;
   }
 }
+/*
+marking images and text active/animation
+*/
 .img-responsive{
+  height: 250px;
+  width: 250px;
+  border: 3px solid transparent;
+  opacity: 0.9;
   border-radius: 5px;
+}
+.img-responsive:hover{
+  border: 1px solid red;
+  opacity: 1;
 }
 
 #fh5co-featured-menu .fh5co-heading, #fh5co-gallery .fh5co-heading, #fh5co-reservation-form .fh5co-heading {
@@ -529,8 +543,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-featured-menu .fh5co-item .fh5co-price:hover{
   color: red;
+  border: 1px solid;
   border-color: red;
   font-weight: bolder;
+  border-radius: 8px;
 }
 #fh5co-featured-menu .fh5co-item:hover{
   border-color: red;
