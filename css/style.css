@@ -8,14 +8,14 @@
 /* =======================================================
 *
 * 	Template Style 
-*
+*   Changing the b color of the body to white
 * ======================================================= */
 body {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "", Papyrus, fantasy;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
-  color: rgba(255, 155, 255, 0.3);
+  color: white;
   /*background: #000 url(../images/broken_noise.png) repeat;*/
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -50,9 +50,11 @@ body {
   background: rgba(0, 0, 0, 0.7);
   content: "";
 }
-
+/*
+* Changing link text color
+*/
 a {
-  color: #eaf72f;
+  color: #5cb85c;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -89,6 +91,9 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   background: #ea272d;
 }
+/*
+* Image border radius
+*/
 #image{
   border-radius: 25px;
 }
@@ -110,12 +115,18 @@ h1, h2, h3, h4, h5, h6, figure {
     position: absolute;
   }
 }
+/*
+*   Navigation to transparent black
+*   bottom border to solid white
+*   border radius to 4px
+*/
 .fh5co-nav.scrolled {
-  background: rgb(169, 169, 172);
+  background: black;
   border-bottom: 1px solid white;
   box-shadow: #0f0;
   border-radius: 4px;
   top: -75px;
+  opacity: 0.9;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fh5co-nav.scrolled {
@@ -263,11 +274,12 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   content: '';
-  width: 30px;
+  width: 15px;
   height: 2px;
-  background: #ea272d;
+  background: red;
   margin: 0 auto;
 }
+
 
 #fh5co-counter,
 .fh5co-bg,
@@ -369,7 +381,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #fff;
   position: relative;
 }
@@ -442,10 +454,16 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #fff;
   border: none;
 }
-
+/*
+* Changing background to whitesmoke
+* Including a Border radius.
+* and the border
+*/
 .fh5co-section {
   padding: 7em 0;
-  background: rgb(169, 169, 172);
+  background: whitesmoke;
+  border: 1px solid white;
+  border-radius: 25px;;
 }
 @media screen and (max-width: 480px) {
   .fh5co-section {
@@ -453,30 +471,35 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-section p {
-  color: rgba(255, 255, 255, 0.3);
+  color: black;
   font-size: 18px;
   line-height: 1.5;
 }
-
+/*
+-Background color to white
+-text color to black and transparent to 0.8
+-And border radius
+*/
 .section-heading {
   width: 100%;
   float: left;
   padding: 50px 50px;
-  background-color: #434343;
-  color: #fff;
-  border-color: #0f0;
+  background-color: white;
+  color: black;
   margin-bottom: 50px;
   opacity: 0.8;
   border-radius: 25px;
+  border-bottom: 1px solid red;
 }
 .section-heading h2 {
   font-style: 40px;
-  color: #fff;
+  color: red;
   font-family: "Satisfy", cursive;
 }
 
 #fh5co-about .img-wrap img {
   margin-bottom: 30px;
+  width: 900px;
 }
 @media screen and (max-width: 992px) {
   #fh5co-about .img-wrap img {
@@ -493,6 +516,7 @@ marking images and text active/animation
   opacity: 0.9;
   border-radius: 5px;
 }
+/*Increasing images focus on hover*/
 .img-responsive:hover{
   border: 1px solid red;
   opacity: 1;
@@ -507,7 +531,7 @@ marking images and text active/animation
   }
 }
 #fh5co-featured-menu .fh5co-heading h2, #fh5co-gallery .fh5co-heading h2, #fh5co-reservation-form .fh5co-heading h2 {
-  color: #fff;
+  color: red;
   font-family: "Satisfy", cursive;
 }
 #fh5co-featured-menu .fh5co-item-wrap, #fh5co-gallery .fh5co-item-wrap, #fh5co-reservation-form .fh5co-item-wrap {
@@ -517,7 +541,6 @@ marking images and text active/animation
 #fh5co-featured-menu .fh5co-item, #fh5co-gallery .fh5co-item, #fh5co-reservation-form .fh5co-item {
   float: left;
   width: 100%;
-  backround: #fff;
 }
 #fh5co-featured-menu .fh5co-item.margin_top, #fh5co-gallery .fh5co-item.margin_top, #fh5co-reservation-form .fh5co-item.margin_top {
   margin-top: 150px;
@@ -529,7 +552,7 @@ marking images and text active/animation
 }
 #fh5co-featured-menu .fh5co-item h3, #fh5co-gallery .fh5co-item h3, #fh5co-reservation-form .fh5co-item h3 {
   margin-bottom: 0px;
-  color: #fff;
+  color: black;
 }
 
 #fh5co-featured-menu .fh5co-item .fh5co-price , #fh5co-gallery .fh5co-item .fh5co-price, #fh5co-reservation-form .fh5co-item .fh5co-price {
@@ -539,12 +562,14 @@ marking images and text active/animation
   font-size: 30px;
   display: block;
   text-align: center;
-  background: #000 url(../images/gallery_9.jpeg) repeat;
+  background: white;
 }
+/*
+*   focusing the prices on hover
+*/
 #fh5co-featured-menu .fh5co-item .fh5co-price:hover{
   color: red;
-  border: 1px solid;
-  border-color: red;
+  border-bottom: 1px solid rgb(182, 36, 36);
   font-weight: bolder;
   border-radius: 8px;
 }
@@ -578,10 +603,14 @@ marking images and text active/animation
     height: 200px;
   }
 }
-
+/*
+Changing the background color of the form and the border radius
+*/
 #form-wrap {
   border: 4px solid rgba(255, 255, 255, 0.04);
   padding: 30px;
+  background: white;
+  border-radius: 25px;
 }
 #form-wrap .form-group:last-child {
   margin-bottom: 0 !important;
@@ -592,18 +621,28 @@ marking images and text active/animation
 }
 #fh5co-featured-testimony .fh5co-heading {
   margin-bottom: 170px;
+  background: transparent;
+  padding: 10px;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-featured-testimony .fh5co-heading {
     margin-bottom: 50px;
   }
 }
 #fh5co-featured-testimony .fh5co-heading h2 {
-  color: #fff;
+  color: red;
   font-family: "Satisfy", cursive;
 }
 #fh5co-featured-testimony .img-to-responsive img {
   margin-bottom: 20px;
+  width: 850px;
+  height: 700px;
+  border-radius: 25px;
+  border: 3px solid white;
+}
+#fh5co-featured-testimony .img-to-responsive img:hover {
+  border: 1px solid white;
 }
 @media screen and (max-width: 768px) {
   #fh5co-featured-testimony .img-to-responsive img {
@@ -625,7 +664,13 @@ marking images and text active/animation
   line-height: 50px;
   font-style: italic;
   font-weight: 300;
-  color: #fff;
+  color: red;
+  background-color: #000;
+  padding: 25px;
+  opacity: 0.5;
+  border-radius: 25px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 @media screen and (max-width: 992px) {
   #fh5co-featured-testimony blockquote p {
@@ -634,8 +679,12 @@ marking images and text active/animation
   }
 }
 #fh5co-featured-testimony blockquote .author {
-  color: rgba(255, 255, 255, 0.7);
+  color: red;
   font-size: 30px;
+}
+#fh5co-featured-testimony blockquote .author:hover{
+  border-color: red;
+  font-weight: bolder;
 }
 @media screen and (max-width: 992px) {
   #fh5co-featured-testimony blockquote .author {
@@ -645,7 +694,7 @@ marking images and text active/animation
 
 #fh5co-slider .fh5co-heading h2 {
   font-family: "Satisfy", cursive;
-  color: #fff;
+  color: red;
 }
 
 #fh5co-slider-wrwap {
@@ -672,7 +721,10 @@ marking images and text active/animation
   background-position: top center;
   height: 600px !important;
   position: relative;
+  border: 3px solid white;
+  border-radius: 20px;
 }
+
 #fh5co-slider-wrwap .flexslider .flex-control-nav {
   top: -30px !important;
   z-index: 1000;
@@ -710,15 +762,18 @@ marking images and text active/animation
 #fh5co-slider-wrwap .flexslider .slider-text-bg .desc {
   margin-top: 9em;
   padding: 2em;
-  background: transparent;
+  background: white;
+  border: 3px solid white;
+  border-bottom: 1px solid red;
 }
+
 @media screen and (max-width: 992px) {
   #fh5co-slider-wrwap .flexslider .slider-text-bg .desc {
     background: #000;
   }
 }
 #fh5co-slider-wrwap .flexslider .slider-text-bg .desc h2 {
-  color: #fff !important;
+  color: red !important;
 }
 @media screen and (max-width: 768px) {
   #fh5co-slider-wrwap .flexslider .slider-text-bg .desc p {
@@ -774,7 +829,7 @@ marking images and text active/animation
 }
 
 #fh5co-started {
-  border-bottom: none;
+  background: rgb(255, 255, 255);
 }
 
 .fh5co-social-icons {
@@ -818,6 +873,7 @@ marking images and text active/animation
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 0;
@@ -1078,7 +1134,7 @@ marking images and text active/animation
 }
 #fh5co-blog .fh5co-heading h2, #fh5co-contact .fh5co-heading h2 {
   font-family: "Satisfy", cursive;
-  color: #fff;
+  color: red;
 }
 
 .fh5co-blog {
@@ -1119,6 +1175,9 @@ marking images and text active/animation
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+.icon-heart2{
+  color: red;
+}
 .fh5co-blog .blog-text span {
   display: inline-block;
   margin-bottom: 20px;
@@ -1135,7 +1194,7 @@ marking images and text active/animation
   list-style: none;
   display: inline-block;
   margin-left: 10px;
-  color: #fff;
+  color: black;
 }
 .fh5co-blog .blog-text .stuff li:first-child {
   margin-left: 0;
@@ -1161,7 +1220,7 @@ marking images and text active/animation
   line-height: 1.5;
 }
 .fh5co-blog .blog-text h3 a {
-  color: white;
+  color: red;
 }
 
 .fh5co-portfolio {
@@ -1303,14 +1362,13 @@ marking images and text active/animation
   padding: 0;
   margin: 0;
   list-style: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
 }
 #fh5co-footer .fh5co-footer-links li a {
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
   text-decoration: none;
 }
 #fh5co-footer .fh5co-footer-links li a:hover {
-  text-decoration: underline;
   color: #ea272d;
 }
 #fh5co-footer .fh5co-widget {
@@ -1322,7 +1380,8 @@ marking images and text active/animation
   }
 }
 #fh5co-footer .fh5co-widget h4 {
-  color: #fff;
+  color: red;
+  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 14px;
@@ -1343,6 +1402,14 @@ marking images and text active/animation
   padding-left: 40px;
   color: #fff;
 }
+#row2{
+  background: white;
+  border-radius: 25px;
+  box-shadow: 1px 1px red ;
+  text-align: center;
+  padding: 20px 5px;
+}
+
 .contact-info li i {
   position: absolute;
   top: .3em;
@@ -1632,7 +1699,7 @@ marking images and text active/animation
   -ms-border-radius: 0px;
   border-radius: 0px;
   background: transparent;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 14px !important;
   letter-spacing: 1px;
@@ -1761,25 +1828,25 @@ marking images and text active/animation
   margin-bottom: 30px !important;
 }
 .form-group label {
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .form-control {
   box-shadow: none;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: whitesmoke;
+  border: 2px solid black;
   height: 54px;
   font-size: 20px;
   font-weight: 300;
   font-family: "Satisfy", cursive;
-  color: #fff;
+  color: black;
 }
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #fff;
+  border-color: black;
 }
 
 textarea {
