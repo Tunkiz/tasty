@@ -916,6 +916,7 @@ Changing the background color of the form and the border radius
 
 #fh5co-timeline {
   padding: 7em 0;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   #fh5co-timeline {
