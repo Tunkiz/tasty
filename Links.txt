@@ -1,0 +1,3 @@
+Name: Tunkis Mabunda
+Git Pages: https://tunkiz.github.io/tasty/
+Git Repository: https://github.com/Tunkiz/tasty
