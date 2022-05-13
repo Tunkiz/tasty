@@ -1088,8 +1088,12 @@ Changing the background color of the form and the border radius
   left: -14px;
   right: auto;
 }
+.timeline-heading .timeline-title{
+  color: red;
+}
 #fh5co-timeline .timeline-title {
   margin-top: 0;
+  color: red;
 }
 #fh5co-timeline .company {
   display: block;
