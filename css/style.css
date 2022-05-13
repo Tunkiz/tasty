@@ -725,6 +725,16 @@ Changing the background color of the form and the border radius
   border-radius: 20px;
 }
 
+.me #fh5co-slider-wrwap .flexslider .slides li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 400px !important;
+  position: relative;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
 #fh5co-slider-wrwap .flexslider .flex-control-nav {
   top: -30px !important;
   z-index: 1000;
@@ -1208,6 +1218,36 @@ Changing the background color of the form and the border radius
   padding-left: 10px;
 }
 .fh5co-blog .blog-text .stuff li i {
+  margin-top: 7px;
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  float: left;
+  font-size: 14px;
+  padding-right: 5px;
+}
+.fh5co-blog .blog-text .stuff {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+}
+.stuff li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  color: black;
+}
+.stuff li:first-child {
+  margin-left: 0;
+}
+.stuff li:last-child {
+  float: right;
+}
+.stuff li:last-child i {
+  padding-right: 0;
+  padding-left: 10px;
+}
+.stuff li i {
   margin-top: 7px;
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.5);
@@ -1893,4 +1933,10 @@ textarea {
   color: #000 !important;
 }
 
+.fh5co-nav .row .dropdown li:hover{
+  border-left: 2px solid white; margin-left: -15px; padding-left: 14px;
+}
+.posted_on{
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
