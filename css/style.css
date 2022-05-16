@@ -69,7 +69,7 @@ p {
   margin-bottom: 30px;
   font-style: 18px;
 }
-
+/*Changing text color to green for h1, h2, h3, h4, h5, h6, and figure*/
 h1, h2, h3, h4, h5, h6, figure {
   color: #0f0;
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -116,9 +116,10 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 /*
-*   Navigation to transparent black
+*   Navigation to transparent black when scrolled
 *   bottom border to solid white
 *   border radius to 4px
+*   Changing top position when scrolled
 */
 .fh5co-nav.scrolled {
   background: black;
@@ -128,6 +129,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: -75px;
   opacity: 0.9;
 }
+/*Changing the backgroung color and background image*/
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fh5co-nav.scrolled {
     background: #000 url(../images/home.jpg) repeat;
@@ -456,8 +458,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 /*
 * Changing background to whitesmoke
-* Including a Border radius.
-* and the border
+* Including a Border radius of 25px.
+* and the border to solid white
 */
 .fh5co-section {
   padding: 7em 0;
@@ -507,7 +509,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 /*
-marking images and text active/animation
+*   Marking images and text active/animation
+*   Changing the height and weight of some images
+*   Adding a border radius of 5pc and transparent of 0.9
 */
 .img-responsive{
   height: 250px;
@@ -516,7 +520,10 @@ marking images and text active/animation
   opacity: 0.9;
   border-radius: 5px;
 }
-/*Increasing images focus on hover*/
+/*  Increasing images focus on hover
+*   Changing image border color to solid red on hover
+*   and trasparent to 1
+*/
 .img-responsive:hover{
   border: 1px solid red;
   opacity: 1;
@@ -530,6 +537,7 @@ marking images and text active/animation
     margin-bottom: 50px;
   }
 }
+/*Changing the text color of h2 and form to red*/
 #fh5co-featured-menu .fh5co-heading h2, #fh5co-gallery .fh5co-heading h2, #fh5co-reservation-form .fh5co-heading h2 {
   color: red;
   font-family: "Satisfy", cursive;
@@ -565,7 +573,8 @@ marking images and text active/animation
   background: white;
 }
 /*
-*   focusing the prices on hover
+*   Making the prices focused on hover
+*   Adding a border radius and color to red
 */
 #fh5co-featured-menu .fh5co-item .fh5co-price:hover{
   color: red;
@@ -725,6 +734,9 @@ Changing the background color of the form and the border radius
   border-radius: 20px;
 }
 
+/*
+* Changing list inside the slide backgound color to white
+*/
 .me #fh5co-slider-wrwap .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
@@ -924,6 +936,9 @@ Changing the background color of the form and the border radius
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*
+* Changing timeline text color to black
+*/
 #fh5co-timeline {
   padding: 7em 0;
   color: #000;
@@ -1088,9 +1103,7 @@ Changing the background color of the form and the border radius
   left: -14px;
   right: auto;
 }
-.timeline-heading .timeline-title{
-  color: red;
-}
+
 #fh5co-timeline .timeline-title {
   margin-top: 0;
   color: red;
